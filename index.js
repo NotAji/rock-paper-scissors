@@ -36,22 +36,80 @@ begin.addEventListener('click', () => {
                 cpuResult.textContent = "CPU picked Rock";
                 winner.textContent = "It's a Draw";
                 begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
                 break;
 
             case 2:
                 cpuResult.textContent = "CPU picked Paper";
                 winner.textContent = "CPU wins!!";
                 begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
                 break;
 
             case 3:
                 cpuResult.textContent = "CPU picked Scissors";
                 winner.textContent = "Player wins!!";
                 begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
                 break;
         }
     });
-    if(round == 6){
-        exit();
-    }
+
+    paperHuman.addEventListener('click', () =>{
+        let choice = Math.floor(Math.random() * max) + min;
+
+        humanResult.textContent = "You picked Paper";
+
+        switch(choice){
+            case 1:
+                cpuResult.textContent = "CPU picked Rock";
+                winner.textContent = "Player wins!!";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+
+            case 2:
+                cpuResult.textContent = "CPU picked Paper";
+                winner.textContent = "It's a draw!!";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+
+            case 3:
+                cpuResult.textContent = "CPU picked Scissors";
+                winner.textContent = "CPU wins!!";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+        }
+    });
+
+    scissorsHuman.addEventListener('click', () => {
+        let choice = Math.floor(Math.random() * max) + min;
+
+        humanResult.textContent = "You picked Scissors";
+
+        switch(choice){
+            case 1:
+                cpuResult.textContent = "CPU picked Rock";
+                winner.textContent = "CPU wins!!";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+
+            case 2:
+                cpuResult.textContent = "CPU picked Paper";
+                winner.textContent = "Player wins!!";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+
+            case 3:
+                cpuResult.textContent = "CPU picked Scissors";
+                winner.textContent = "It's a draw";
+                begin.style.visibility = "visible";
+                begin.textContent = "Next Round";
+                break;
+        }
+    });
 })

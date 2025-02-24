@@ -131,3 +131,25 @@ body{
 #start:active{
     visibility: hidden;
 }
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -60px;
+}
+#playerScore{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    
+}
+#cpuScore{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 50px;
+}
