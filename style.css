@@ -1,0 +1,113 @@
+body{
+    box-sizing: border-box;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.round{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+.profileContainer{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-evenly;
+    gap: 15em
+}
+
+.humanProfile{
+    border: 3px solid blue;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+}
+.humanProfile h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cpuProfile{
+    border: 3px solid red;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+}
+.cpuProfile h3{
+    display: flex;
+    justify-content: center;
+}
+.choiceContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.choiceContainer .versus{
+    align-content: center;
+}
+.humanChoices{
+    display: flex;
+    flex-direction: column;
+}
+
+#rockHuman ,#paperHuman,#scissorsHuman{
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#rockHuman h1, #paperHuman h1, #scissorsHuman h1{
+    font-size: 80px;
+}
+#rockCPU ,#paperCPU,#scissorsCPU{
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#rockCPU h1, #paperCPU h1, #scissorsCPU h1{
+    font-size: 80px;
+}
+
+#rockHuman:hover ,#paperHuman:hover,#scissorsHuman:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+#rockCPU:hover ,#paperCPU:hover,#scissorsCPU:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.humanProfile:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.cpuProfile:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.resultContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+}
+
+.displayWinner{
+    display: flex;
+    justify-content: center;
+}
