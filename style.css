@@ -111,3 +111,23 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.begin{
+    display: flex;
+    justify-content: center;
+}
+.begin #start{
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: aliceblue;
+}
+#start:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#start:active{
+    visibility: hidden;
+}
